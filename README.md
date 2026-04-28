@@ -1,44 +1,43 @@
-# ai-automl-multiagent-pipeline
-AI-powered AutoML system that converts natural language into ML pipelines with multi-agent validation.
-# 🤖 AI-Powered Automated Machine Learning Pipeline with Multi-Agent Validation
+# 🤖 AI-Powered AutoML Pipeline with Multi-Agent Validation
 
 ## 🚀 Overview
-This project is an intelligent AutoML system that converts natural language input into a complete machine learning pipeline and validates predictions using a multi-agent architecture.
+This project is an intelligent AI system that converts natural language input into a complete machine learning pipeline and validates predictions using a multi-agent-inspired framework.
 
-It aims to reduce manual effort in building ML models while improving reliability and transparency.
+Unlike traditional AutoML systems, this approach focuses on **intent understanding, reliability, and self-correction**.
 
 ---
 
 ## 🧠 Key Features
 
-- 🔍 NLP-based intent understanding from user input  
-- ⚙️ Automated ML pipeline generation  
-- 📊 Model training, evaluation, and selection  
-- 🔁 Hyperparameter optimization  
-- 🤖 Multi-Agent validation system:
-  - Performer → Generates predictions
-  - Critic → Validates logical correctness
-  - Coordinator → Resolves conflicts  
-- 🔎 Explainability using SHAP & LIME  
-- ♻️ Self-correcting feedback loop  
+- 🔍 NLP-based intent understanding (task, domain, metric)
+- ⚙️ Automated ML pipeline configuration
+- 🤖 Multi-model prediction (Logistic + Transformer-based BERT)
+- 🔀 Multi-intent query handling
+- ⚠️ Conflict detection for ambiguous inputs
+- 🧠 Semantic correction layer for improved predictions
+- 📊 Confidence scoring for outputs
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-The system is divided into 4 phases:
+The system follows a layered pipeline:
 
-1. **Intent Understanding**  
-   Converts user text into ML problem (classification/regression)
+1. **Intent Understanding**
+   - Converts user text → ML task (classification, regression, clustering)
 
-2. **Pipeline Construction**  
-   Selects models, preprocessing steps, and evaluation metrics
+2. **Embedding & Modeling**
+   - Sentence Transformers + Logistic Regression
+   - Multi-head BERT (advanced model)
 
-3. **Execution Layer**  
-   Trains multiple models and selects the best one
+3. **Inference Engine**
+   - Multi-intent splitting
+   - Context augmentation
+   - Prediction with confidence scores
 
-4. **Validation & Learning**  
-   Multi-agent verification + explainability + self-correction
+4. **Validation Layer**
+   - Conflict detection
+   - Semantic correction rules
 
 ---
 
@@ -46,38 +45,39 @@ The system is divided into 4 phases:
 
 - Python  
 - Scikit-learn  
-- Pandas, NumPy  
-- SHAP  
-- LIME  
+- Sentence Transformers  
+- HuggingFace Transformers (BERT)  
+- PyTorch  
+- NumPy / Pandas  
 
 ---
 
 ## 💡 Problem It Solves
 
-Building ML models requires expertise and time. Existing AutoML tools lack:
-- intent understanding  
-- validation of predictions  
+Building ML pipelines manually is complex and requires expertise.
 
-This system bridges that gap.
+Existing AutoML tools:
+- Do not understand user intent well  
+- Do not validate predictions  
+
+This system:
+✅ Converts natural language → ML pipeline  
+✅ Detects ambiguous/conflicting queries  
+✅ Improves reliability using hybrid ML + rules  
 
 ---
 
 ## 📈 Impact
 
-- Reduces manual ML workflow effort  
+- Reduces manual ML pipeline effort  
 - Improves prediction reliability  
-- Enables intelligent, self-improving ML systems  
+- Handles real-world ambiguous inputs  
+- Demonstrates intelligent AI system design  
 
 ---
 
-## 🔮 Future Improvements
+## ▶️ How to Run
 
-- Integration with LLMs (GPT, Claude)  
-- UI for prompt-based ML building  
-- Real-time deployment support  
-
----
-
-## 👨‍💻 Author
-
-Vemula Charan
+```bash
+pip install -r requirements.txt
+python main.py
